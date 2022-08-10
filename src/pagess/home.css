@@ -1,0 +1,37 @@
+.main-contain {
+    margin-bottom: 0.5rem;
+}
+
+.artilcle-container {
+    width: fit-content;
+    margin: auto;
+    border-radius: 0.2rem;
+    padding: 0.6rem;
+    box-shadow: 0px 1px 5px 2px var(--shaddow-color);
+}
+
+.artilcle-container:hover{
+    box-shadow: 0px 2px 10px 5px var(--shaddow-color);
+    opacity: 0.9;
+}
+
+.article-img {
+    width: 22rem;
+    border-radius: 0.5rem;
+}
+
+.heading-detail {
+    width: 40vw;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.title-heading {
+    color: black;
+}
+
+.title-heading:hover {
+    text-decoration: underline;
+}

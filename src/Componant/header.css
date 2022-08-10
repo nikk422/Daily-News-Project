@@ -1,0 +1,16 @@
+.nav{
+    border:1px solid ;
+    box-shadow: 0px 5px 10px 5px var(--shaddow-color);
+    position:sticky;
+    gap: 0.5rem;
+    top:0;
+    z-index: 1; 
+    background-color:var( --secondary-color);
+    padding:1rem;
+}
+.nav-img{
+    width:4rem;
+}
+.navTitle{
+    margin-top:1rem;
+}

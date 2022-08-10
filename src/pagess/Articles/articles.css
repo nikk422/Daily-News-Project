@@ -1,0 +1,25 @@
+
+.container-news{
+    width: 57vw;
+    gap:1.5rem;
+    margin: 1rem auto 1rem auto;
+}
+
+.article-img2{
+    width:57vw;
+}
+.title{
+    font-size:2rem;
+}
+.author-detail{
+    gap:0.2rem;
+    font-size:1rem;
+}
+.date{
+    color: var( --grey-200);
+}
+.content{
+    word-spacing: 0.3rem;
+    font-size: 1.2rem;
+    line-height:  1.8rem;
+}
