@@ -11,31 +11,31 @@ const Home = () => {
       <Navbar />
       <h1 className="align-center decoration-underline">Latest News</h1>
       {data.map((i) => (
-        <div className="artilcle-container flex flex-justify-center gap-1r">
-          <section className="artilcle-img-contain">
-            <img
-              src={i.jetpack_featured_media_url}
-              className="article-img"
-              alt="logo"
-            />
-          </section>
-          <section className="heading-detail flex-column gap-1r">
-            <Link to={`/article/${i.id}`}>
+        <Link to={`/article/${i.id}`}>
+          <div className="artilcle-container flex flex-justify-center gap-1r">
+            <section className="artilcle-img-contain">
+              <img
+                src={i.jetpack_featured_media_url}
+                className="article-img"
+                alt="logo"
+              />
+            </section>
+            <section className="heading-detail flex-column gap-1r link-color">
               <h3 className="title-heading">{i.title.rendered}</h3>
-            </Link>
-            <div className="details flex gap-1r">
-              <p>
-                By -<strong>{i.parsely.meta.author[0].name}</strong>
-              </p>
-              <p className="date">updated- {i.date}</p>
-            </div>
-            <p
-              dangerouslySetInnerHTML={{
-                __html: i.excerpt.rendered.replace("[&hellip;]", "..."),
-              }}
-            ></p>
-          </section>
-        </div>
+              <div className="details flex gap-1r">
+                <p>
+                  By -<strong>{i.parsely.meta.author[0].name}</strong>
+                </p>
+                <p className="date">updated- {i.date}</p>
+              </div>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: i.excerpt.rendered.replace("[&hellip;]", "..."),
+                }}
+              ></p>
+            </section>
+          </div>
+        </Link>
       ))}
     </main>
   );

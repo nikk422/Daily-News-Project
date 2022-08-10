@@ -15,6 +15,7 @@
     opacity: 0.9;
 }
 
+
 .article-img {
     width: 22rem;
     border-radius: 0.5rem;
@@ -30,6 +31,10 @@
 
 .title-heading {
     color: black;
+}
+.link-color{
+    color: black;
+
 }
 
 .title-heading:hover {
