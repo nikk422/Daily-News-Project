@@ -24,7 +24,7 @@ const Home = () => {
               <h3 className="title-heading">{i.title.rendered}</h3>
               <div className="details flex gap-1r">
                 <p>
-                  By -<strong>{i.parsely?.meta?.author[0]?.name}</strong>
+                  By -<strong>{i.parsely.meta.author[0]?.name}</strong>
                 </p>
                 <p className="date">updated- {i.date}</p>
               </div>
